@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "revive",
 	"version": "${version}",
-	"name": "Mod Name",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Player Revive",
+	"description": "A server-side mod that allows you to revive dead (unconscious) players.",
 	"authors": [
 		"LuciusofLegend"
 	],
@@ -12,15 +12,15 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/revive/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"lucius.modid.ModNameMain"
+			"lucius.revive.ReviveMain"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json"
+      "revive.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.14.24",

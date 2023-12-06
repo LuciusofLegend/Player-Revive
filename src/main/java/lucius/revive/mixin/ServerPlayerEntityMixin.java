@@ -23,7 +23,7 @@ public class ServerPlayerEntityMixin {
         if(((PlayerAccessor) this).reviveHandler().deathCountdown == this.reviveHandler.deathCountdown) {
             ReviveMain.LOGGER.info("Success!");
         } else {
-            ReviveMain.LOGGER.info("Failure");
+            ReviveMain.LOGGER.info("Failure!");
         }
         this.reviveHandler.deathCountdown = 6000;
     }

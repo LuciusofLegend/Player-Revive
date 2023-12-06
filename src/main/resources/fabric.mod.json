@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "revive",
 	"version": "${version}",
-	"name": "Mod Name",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Player Revive",
+	"description": "The first server-side player reviving mod.",
 	"authors": [
 		"LuciusofLegend"
 	],
@@ -12,18 +12,18 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/revive/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"lucius.modid.ModNameMain"
+          "lucius.revive.ReviveMain"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json"
+		"revive.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.14.24",
+		"fabricloader": ">=0.15.0",
 		"minecraft": "1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"

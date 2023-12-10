@@ -1,5 +1,6 @@
 package lucius.revive.handler;
 
+import lucius.revive.config.ReviveConfig;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.server.network.ServerPlayerEntity;
 
@@ -25,7 +26,7 @@ public class PlayerReviveHandler {
 
     public void defaults() {
         this.isConscious = true;
-        this.deathCountdown = 6000;
+        this.deathCountdown = ReviveConfig.deathCountdownLength;
         this.KOSource = null;
         this.tickDisconnected = 0;
         this.playerToRevive = null;

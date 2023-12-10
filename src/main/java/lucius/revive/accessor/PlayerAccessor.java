@@ -1,6 +1,7 @@
 package lucius.revive.accessor;
 
 import lucius.revive.handler.PlayerReviveHandler;
+import net.minecraft.text.MutableText;
 
 public interface PlayerAccessor {
 
@@ -10,4 +11,5 @@ public interface PlayerAccessor {
     String startReviving();
     String stopReviving();
     String finishReviving();
+    MutableText convertDeathCountdown();
 }
